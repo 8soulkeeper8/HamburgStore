@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="normalize.css">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__top-leftdiv">Green Hall</div>
+            <div class="header__top-rightdiv">
+                <div class="wallet">
+                    <select name="" id="currency">
+                        <option value="USD">USD</option>
+                        <option value="RUB">RUB</option>
+                    </select>
+                </div>
+                <div class="log-sign"><a href="/login/login.html">Log in or Sign up</a></div>   
+            </div>
+        </div>
+
+        <div class="header__mid">
+            <div class="container">
+                <div class="header-mid-logo">
+                    <div class="logo"> 
+                     
+                    <a href="/index.html"><img src="img/logo.svg" alt="loading..."></a>
+                    </div>
+                    
+                    <div class="namecompany">
+                        <a class="logo-link" href="/index.html">Hamburg Store</a>
+                    </div>
+
+                </div>
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="Search...">
+                        <button type="submit"></button>
+                      </form>
+                    </div>
+
+                    <div class="icons">
+                        <div class="basket" >
+                            <a href="#" class="iconslink"><ion-icon name="basket-outline"></ion-icon></a>
+                        </div>
+                        <div class="notifications">
+                            <a href="#" class="iconslink"><ion-icon name="notifications-outline"></ion-icon></a>
+                        </div>
+                        <div class="cabinet">
+                            <a href="#" class="iconslink"><ion-icon name="person-outline"></ion-icon></a>
+                        </div>
+                    </div>
+            </div>
+            
+        </div>
+
+        <div class="header__bot">
+            <div class="menu">
+                <input type="button" onclick="buttonClick(this)" value="Take Promocode">
+                     
+            
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="#">
+                        Sales
+                    </li></a>
+                    <li><a href="#">
+                        Products  
+                    </li></a>
+                    <li><a href="#">
+                        Menu
+                    </li></a>
+                    <li><a href="#">
+                        About Us
+                    </li></a>
+                    <li><a href="#">
+                        Support
+                    </li></a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+        <ul id="slides">
+            <li class="slide showing"></li>
+            <li class="slide"></li>
+            <li class="slide"></li>
+            <li class="slide"></li>
+            <li class="slide"></li>
+        </ul>
+    </section>
+    <section class="section-info">
+        <div class="container">
+            <div class="info-card">
+                <div class="img-info-card">
+                    <img src="/img/card-image/delivery.svg" alt="">
+                </div>
+                <div class="text-info-card">
+                   <p> Fast Deliviry </p><p class="small-text"> delivery from <br> 10 to 25 minutes</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="img-info-card">
+                    <img src="/img/card-image/cofe.svg" alt="">
+                </div>
+                <div class="text-info-card">
+                    <p> Free Cofe</p><p class="small-text"> free coffee <br> in every order</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="img-info-card">
+                    <img src="/img/card-image/wallet.svg" alt="">
+                </div>
+                <div class="text-info-card">
+                    <p> Quick Payment </p><p class="small-text">100% secure <br> online payment</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="img-info-card">
+                    <img src="/img/card-image/headphones.svg" alt="">
+                </div>
+                <div class="text-info-card">
+                   <p> 24/7 Support</p><p class="small-text">operators respond <br> around the clock</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <script src="slider.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
