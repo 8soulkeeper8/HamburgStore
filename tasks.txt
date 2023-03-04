@@ -1,0 +1,2 @@
+переделать скролл по ссылке about us
+file - archor.js
