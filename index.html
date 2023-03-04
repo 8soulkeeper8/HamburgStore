@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="normalize.css">
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="modal.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>Document</title>
     
@@ -80,12 +81,14 @@
                     <li><a href="#" onclick="scrollToBottom()">
                         About Us
                     </li></a>
-                    <li><a href="#" class="smooth-scroll">
+                    <li><a href="#" id="sup" >
                         Support
                     </li></a>
                 </ul>
             </div>
         </div>
+        
+
     </header>
     <main>
         <section>
@@ -148,14 +151,14 @@
                 </div>
             </a>
             <div class="twoblock">
-                <a href="#">
+                <a href="#" class="twoblock-top">
                     <div>
                         <img src="/img/card-hotsale/hotsale2.png" alt="" >
                         <div class="caption">Chicago Classic <p><del>12$</del> 10$</p></div>
                     </div>
                 </a>
-                <a href="#">
-                    <div>
+                <a href="#" class="twoblock-bot">
+                    <div >
                         <img src="/img/card-hotsale/hotsale3.png" alt="">
                         <div class="caption">Hawaii Royal <p><del>10$</del> 7$</p></div>
                     </div>
@@ -171,15 +174,15 @@
     </section>
     <section>
         <div class="combo-container">
-          <a href="#">
-            <div class="card-combo">
+          <a href="#" class="card-combo">
+            <div>
                 <img src="/img/burgercombo/blackcombo.png" alt="">
                 <div class="frame"></div>
                 <div class="captiontwo">Black Beast Combo</div>
               </div>
           </a>
-          <a href="#">
-            <div class="card-combo2">
+          <a href="#" class="card-combo2">
+            <div>
                 <img src="/img/burgercombo/classiccombo.png" alt="">
                 <div class="frame"></div>
                 <div class="captiontwo">Classic Couple Combo</div>
@@ -190,15 +193,15 @@
 
       <section>
         <div class="combo-container2">
-          <a href="#">
-            <div class="card-combo">
+          <a href="#" class="card-combo">
+            <div>
                 <img src="/img/burgercombo/nuggetscombo.png" alt="">
                 <div class="frame"></div>
                 <div class="captiontwo">Nuggets Boom Combo</div>
               </div>
           </a>
-          <a href="#">
-            <div class="card-combo2" >
+          <a href="#" class="card-combo2">
+            <div>
                 <img src="/img/burgercombo/caesarcombo.png" alt="">
                 <div class="frame"></div>
                 <div class="captiontwo">Caesar Fresh Combo</div>
@@ -229,7 +232,9 @@
         <div class="footer-bottom" >
           <p>&copy; 2023 Homies Burger. All Rights Reserved.</p>
         </div>
-      </footer>
+    </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="modal.js"></script>
     <script src="scroll.js"></script>
     <script src="archor.js"></script>
     <script src="slider.js"></script>

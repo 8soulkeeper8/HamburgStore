@@ -145,6 +145,7 @@ select{
 
     .icons ion-icon {
         font-size: 30px;
+        color: #222;
       }
 
     .icons a:visited{
@@ -352,6 +353,12 @@ select{
             justify-content: space-between;
             align-items: flex-start;
           }
+
+          .card-sales a{
+            width: 610px;
+            margin-right: 15px;
+          }
+          
           
           .oneblock {
             position: relative;
@@ -387,6 +394,16 @@ select{
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+            height: 248px;
+          }
+
+          a.twoblock-top {
+            max-height: 248px;
+            margin-bottom: 15px;
+          }
+
+          a.twoblock-bot{
+          height: 248px;
           }
           
           .twoblock div {
@@ -485,6 +502,7 @@ select{
             justify-content: space-between;
             align-items: flex-start;
             margin-bottom: 85px;
+            
           }
 
           .card-combo2{
@@ -519,7 +537,7 @@ select{
             box-sizing: border-box;
           }
 
-                                     /* FOOTER */
+          /* FOOTER */
 
           footer {
             background-color: #222;
@@ -578,3 +596,32 @@ select{
             }
           }
           
+          /* MODAL WINDOW */
+
+          .swal-overlay{
+            background-color: rgba(34, 34, 34, 0.9); 
+          }
+
+          .swal-footer {
+            background-color: #222;
+            margin-top: 32px;
+            border-top: 1px solid #444;
+            overflow: hidden;
+          }
+
+          .swal-button--confirm {
+            padding: 7px 19px;
+            border-radius: 4px;
+            background-color: #44c06d;
+            font-size: 12px;
+          }
+
+          .swal-button--cancel {
+            color: white;
+            padding: 7px 19px;
+            border-radius: 4px;
+            background-color: #b34d49;
+            font-size: 12px;
+            
+
+          }
