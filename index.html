@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="normalize.css">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="modal.css">
+   <link rel="stylesheet" href="media.css">
+   <link rel="icon" href="logo.ico" type="image/x-icon">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!-- Шапка 1 лвл -->
+    <header class="header">
+        <div class="header__top">
+            <div class="header__top-leftdiv">Alexandr Melnikov</div>
+            <div class="header__top-rightdiv">
+                <div class="wallet">
+                    <select name="" id="currency">
+                        <option value="USD">USD</option>
+                        <option value="RUB">RUB</option>
+                        <option value="EUR">EUR</option>
+                        <option value="JPY">JPY</option>
+                    </select>
+                </div>
+                <div class="log-sign"><a href="login/login.html">Log in or Sign up</a></div>   
+            </div>
+        </div>
+        <!-- Шапка 2 лвл -->
+        <div class="header__mid">
+            <div class="container">
+                <div class="header-mid-logo">
+                    <div class="logo"> 
+                    <a href="index.html"><img src="img/logo.svg" alt="loading..."></a>
+                    </div>
+                    <div class="namecompany">
+                        <a class="logo-link" href="index.html">Hamburg Store</a>
+                    </div>
+                </div>
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="Search...">
+                        <button type="submit"></button>
+                      </form>
+                    </div>
+                    <div class="icons">
+                        <div class="basket" >
+                            <a href="#" class="iconslink"><ion-icon name="basket-outline"></ion-icon></a>
+                        </div>
+                        <div class="notifications">
+                            <a href="#" class="iconslink"><ion-icon name="notifications-outline"></ion-icon></a>
+                        </div>
+                        <div class="cabinet">
+                            <a href="#" class="iconslink"><ion-icon name="person-outline"></ion-icon></a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- Шапка 3 лвл -->
+        <div class="header__bot">
+            <div class="menu">
+                <input type="button" onclick="buttonClick(this)" value="Take Promocode">
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="#sales" class="smooth-scroll">
+                        Sales
+                    </li></a>
+                    <li><a href="#menu" class="smooth-scroll">
+                        Products  
+                    </li></a>
+                    <li><a href="#menu" class="smooth-scroll">
+                        Menu
+                    </li></a>
+                    <li><a href="#aboutus">
+                        About Us
+                    </li></a>
+                    <li><a href="#" id="sup" >
+                        Support
+                    </li></a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+        <ul id="slides">
+            <li class="slide showing"></li>
+            <li class="slide"></li>
+            <li class="slide"></li>
+            <li class="slide"></li>
+            <li class="slide"></li>
+        </ul>
+    </section>
+    <!-- Инфо-карты -->
+    <section class="section-info">
+        <div class="container">
+            <div class="info-card">
+                <div class="img-info-card">
+                    <img src="img/card-image/delivery.svg" alt="">
+                </div>
+                <div>
+                   <p class="text-info-card"> Fast Delivery </p><p class="small-text"> delivery from <br> 10 to 25 minutes</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="img-info-card">
+                    <img src="img/card-image/cofe.svg" alt="">
+                </div>
+                <div>
+                    <p class="text-info-card"> Free Cofe</p><p class="small-text"> free coffee <br> in every order</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="img-info-card">
+                    <img src="img/card-image/wallet.svg" alt="">
+                </div>
+                <div>
+                    <p  class="text-info-card"> Quick Payment </p><p class="small-text">100% secure <br> online payment</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="img-info-card">
+                    <img src="img/card-image/headphones.svg" alt="">
+                </div>
+                <div>
+                   <p class="text-info-card"> 24/7 Support</p><p class="small-text">operators respond <br> around the clock</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="img-info-card">
+                    <img src="img/card-image/headphones.svg" alt="">
+                </div>
+                <div>
+                   <p class="text-info-card"> 24/7 Support</p><p class="small-text">operators respond <br> around the clock</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="img-info-card">
+                    <img src="img/card-image/headphones.svg" alt="">
+                </div>
+                <div>
+                   <p class="text-info-card"> 24/7 Support</p><p class="small-text">operators respond <br> around the clock</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Горящие акции -->
+    <section>
+        <div class="outer-block">
+            <div class="inner-block">
+              <h2 id="sales">Hot Sales</h2>
+              <img src="img/section2/fire.svg" alt="Image" style="margin-top: 5px;">
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #222;">
+        <div class="containertr">
+            <div class="card" style="background-image: url('img/card-hotsale/hotsale1.png');">
+                <div class="frame"></div>
+                <div class="namescard">Every Friday! Buy coffee - get a cheeseburger as a gift</div>
+            </div>
+            <div class="card" style="background-image: url('img/card-hotsale/hotsale2.png');">
+                <div class="frame"></div>
+                <div class="namescard">Discount on the delivery of the first order</div>
+            </div>
+            <div class="card" style="background-image: url('img/card-hotsale/hotsale3.png');">
+                <div class="frame"></div>
+                <div class="namescard">Every Friday! Buy coffee - get a cheeseburger as a gift</div>
+            </div>
+            <div class="card" style="background-image: url('img/card-hotsale/hotsale1.png');">
+                <div class="frame"></div>
+                <div class="namescard">Discount on the delivery of the first order</div>
+            </div>
+          </div>
+    </section>
+    <!-- Популярные комбо -->
+    <section>
+        <div class="outer-block" id="h2combo">
+            <div class="inner-block"  id="h2combotext" >
+              <h2 id="menu">Popular Combo Lunches</h2>
+              <img src="/img/burgercombo.svg" alt="Image" style="margin-top: 5px;">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="containertr">
+            <div class="card" style="background-image: url('img/card-hotsale/hotsale1.png');">
+                <div class="frame"></div>
+                <div class="namescard">Double Drive Burger</div>
+            </div>
+            <div class="card" style="background-image: url('img/card-hotsale/hotsale2.png');">
+                            <div class="frame"></div>
+                <div class="namescard">Chicago Classic</div>
+            </div>
+            <div class="card" style="background-image: url('img/card-hotsale/hotsale3.png');">
+                            <div class="frame"></div>
+                <div class="namescard">Hawaii Royal</div>
+            </div>
+            <div class="card" id="aboutus" style="background-image: url('img/card-hotsale/hotsale1.png');">
+                            <div class="frame"></div>
+                <div class="namescard">Drive Burger</div>
+            </div>
+            <div class="card" style="background-image: url('img/card-hotsale/hotsale3.png');">
+                            <div class="frame"></div>
+                <div class="namescard">Cheeseburger</div>
+            </div>
+            <div class="card" style="background-image: url('img/card-hotsale/hotsale1.png');">
+                            <div class="frame"></div>
+                <div class="namescard">Double Cheese</div>
+            </div>
+          </div>
+    </section>
+
+    </main>
+   
+    <footer >
+        <div class="footer-container" >
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <p>We are a burger joint that prides itself on using fresh, high-quality ingredients to make the best burgers in town. Come visit us and see for yourself!</p>
+          </div>
+          <div class="footer-section" >
+            <h3>Opening Hours</h3>
+            <p>Monday - Friday: 11am - 10pm</p>
+            <p>Saturday - Sunday: 10am - 11pm</p>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>123 Burger Street</p>
+            <p>New York, NY 10001</p>
+            <p>Phone: (123) 456-7890</p>
+          </div>
+        </div>
+        <div class="footer-bottom" >
+          <p>&copy; 2023 Hamburg Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="modal.js"></script>
+    <script src="scroll.js"></script>
+    <script src="slider.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

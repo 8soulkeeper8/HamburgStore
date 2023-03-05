@@ -1,0 +1,335 @@
+/* correct site pc   */
+@media (max-width: 1802px) {
+    .card-sales, .combo-container, .combo-container2 {
+       
+    }
+    
+    .search form {
+        width: 400px;
+    }
+
+
+    .header__bot {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .navlinks li {
+        margin-right: 10px;
+    }
+
+    #slides {
+        height: 400px; /* уменьшаем высоту слайдера */
+        margin-top: 0px; /* уменьшаем отступ сверху */
+        margin-bottom: 50px; /* уменьшаем отступ снизу */
+        padding-top: 0;
+    }
+
+
+
+}
+
+/* (Samsung Galaxy S8, S9, Note 8, Note 9, LG V30, LG G8 ThinQ, Samsung Galaxy S20, S21) */
+@media (max-width: 1440px) {
+    .search form {
+        width: 350px;
+    }
+
+    .header__mid .container{
+        margin-left: 18%;
+        margin-right: 18%;
+    }
+
+    .header__bot{
+        margin-right: 13%;
+        margin-left: 13%;
+    }
+
+    .navlinks li {
+        font-size: 14px;
+        margin-right: 8px;
+    }
+
+    #slides {
+        height: 300px; /* уменьшаем высоту слайдера */
+        margin-top: 0px; /* уменьшаем отступ сверху */
+        margin-bottom: 50px; /* уменьшаем отступ снизу */
+        padding-top: 0;
+    }
+
+    .section-info .container{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+
+/* (iPhone XS Max, 11 Pro Max) */
+@media (max-width: 1242px){
+    .search form {
+        width: 300px;
+    }
+
+    .header__bot{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .navlinks li {
+        font-size: 14px;
+
+    }
+
+    #slides {
+        height: 300px; /* уменьшаем высоту слайдера */
+        margin-top: -10px; /* уменьшаем отступ сверху */
+        margin-bottom: 50px; /* уменьшаем отступ снизу */
+    }
+
+    .section-info .container{
+        margin-left: 10%;
+        margin-right: 10%;
+
+    }
+    
+
+}
+
+/* (iPhone X, XS, 11 Pro) */
+@media (max-width: 1125px) {
+    .search form {
+        width: 300px;
+    }
+    .header__mid .container{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #slides {
+        height: 300px; /* уменьшаем высоту слайдера */
+        margin-top: -20px; /* уменьшаем отступ сверху */
+        margin-bottom: 50px; /* уменьшаем отступ снизу */
+        padding-top: 0;
+}
+
+.section-info .container{
+    margin-left: 8%;
+    margin-right: 8%;
+
+}
+
+}
+
+/* (Samsung Galaxy S5, HTC One M9, Google Pixel 3, LG G7 ThinQ) */
+@media (max-width: 1080px) {
+    .search form {
+        width: 300px;
+    }
+    .navlinks ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 10px 0 0 30px;
+        padding: 0;
+    }   
+    .navlinks li{
+        margin-right: 15px;
+        font-size: 16px;
+    }
+    .header__mid .container{
+        margin-top: 0px;
+    }
+
+
+
+.section-info .container{
+    margin-left: 8%;
+    margin-right: 8%;
+
+}
+
+.text-info-card{
+    font-size: 15px;
+}
+
+.small-text {
+    font-size: 13px;
+}
+
+}
+
+@media (max-width:971px){
+    #slides {
+        height: 250px; /* уменьшаем высоту слайдера */
+        margin-top: 0px; /* уменьшаем отступ сверху */
+        margin-bottom: 50px; /* уменьшаем отступ снизу */
+        padding-top: 0;
+    }
+
+    .section-info .container{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .text-info-card{
+        font-size: 15px;
+    }
+    
+    .small-text {
+        font-size: 13px;
+    }
+    
+}
+
+/* (iPhone XR) */
+@media (max-width: 828px) {
+
+    .search form {
+        display: none;
+    }
+
+    #slides {
+    display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .header__mid .container{
+        margin-top: 0px;
+    }
+
+    .navlinks li{
+        margin-right: 15px;
+        font-size: 15px;
+        
+    }
+
+    .header__bot{
+        margin-left: 0;
+        margin-right: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-info .container{
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: 15px;
+    }
+    
+    .text-info-card{
+        font-size: 15px;
+    }
+    
+    .small-text {
+        font-size: 13px;
+    }
+
+    .info-card img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* (iPhone 6, 6S, 7, 8) */
+@media (max-width: 750px) {
+
+    .header__bot {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+
+
+    .menu{
+        display: none;
+    }
+
+    .section-info .container{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    .text-info-card{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    
+    .small-text {
+        font-size: 11px;
+    }
+
+    .info-card img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* (iPhone 4 и 4S, iPhone 5, 5C, 5S, SE) */
+@media (max-width: 640px) {
+
+    .navlinks li{
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    .menu{
+        display: none;
+    }
+}
+
+@media(max-width: 534px){
+    .icons ion-icon {
+        display: none;
+      }
+      .text-info-card{
+        font-size: 10px;
+      }
+      .small-text{
+        font-size: 8px;
+      }
+      .img-info-card img{
+        width: 20px;
+        height: 20px;
+      }
+      
+      
+}
+
+@media(max-width:374px){
+    .text-info-card{
+        margin-top: 3px;
+        margin-bottom: 0px;
+    }
+   .small-text{
+    margin-top: 0px;
+    margin-bottom: 0px;
+   }
+   .img-info-card img {
+    margin:0 auto auto auto;
+   }
+   .navlinks li{
+    margin-right: 2px;
+    font-size: 10px;
+    }
+    .navlinks ul {
+        margin: 10px 0 0 5px;
+    }
+
+}
+
+/* (iPhone 3GS и более ранние модели) */
+@media (max-width: 320px) {
+    .header-mid-logo .namecompany a{
+        font-size: 15px;
+    }
+
+
+    }
+
+
+
+
+
