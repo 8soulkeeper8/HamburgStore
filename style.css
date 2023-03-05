@@ -258,7 +258,7 @@ select{
             background-image: url(./img/slider-image/uu.png);
         }
         .slide:nth-of-type(2) {
-            background-image: url(./HamburgStore/img/slider-image/yy.png);
+            background-image: url(./img/slider-image/yy.png);
         }
         .slide:nth-of-type(3) {
             background-image: url(./img/slider-image/uu.png);
@@ -267,7 +267,7 @@ select{
             background-image: url(./img/slider-image/yy.png);
         }
         .slide:nth-of-type(5) {
-            background-image: url(./HamburgStore/img/slider-image/uu.png);
+            background-image: url(./img/slider-image/uu.png);
             width: 100%;
         }
 
