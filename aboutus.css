@@ -152,15 +152,11 @@
     }
   }
 
-  .history-back ion-icon {
-    color: white;
-  }
   .history-back{
+    position: absolute;
     color: white;
     margin-left: 10%;
     font-size: 40px;
+    left: 0px;
   }
   
-  .icons ion-icon {
-    color: white;
-  }
