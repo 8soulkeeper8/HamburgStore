@@ -1,13 +1,8 @@
 /* correct site pc   */
 @media (max-width: 1802px) {
-    .card-sales, .combo-container, .combo-container2 {
-       
-    }
-    
     .search form {
         width: 400px;
     }
-
 
     .header__bot {
         margin-left: 15%;
@@ -24,9 +19,6 @@
         margin-bottom: 50px; /* уменьшаем отступ снизу */
         padding-top: 0;
     }
-
-
-
 }
 
 /* (Samsung Galaxy S8, S9, Note 8, Note 9, LG V30, LG G8 ThinQ, Samsung Galaxy S20, S21) */
@@ -65,7 +57,6 @@
         margin: 0 2%;
     }
     
-
 }
 
 /* (iPhone XS Max, 11 Pro Max) */
@@ -81,7 +72,6 @@
 
     .navlinks li {
         font-size: 14px;
-
     }
 
     #slides {
@@ -93,7 +83,6 @@
     .section-info .container{
         margin-left: 10%;
         margin-right: 10%;
-
     }
 
 
@@ -114,15 +103,14 @@
         margin-top: -20px; /* уменьшаем отступ сверху */
         margin-bottom: 50px; /* уменьшаем отступ снизу */
         padding-top: 0;
-}
+    }
 
-.section-info .container{
-    margin-left: 8%;
-    margin-right: 8%;
+    .section-info .container{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 
-}
-
-}
+    }
 
 /* (Samsung Galaxy S5, HTC One M9, Google Pixel 3, LG G7 ThinQ) */
 @media (max-width: 1080px) {
@@ -162,7 +150,6 @@
     .small-text {
         font-size: 13px;
     }
-
     }
 
 @media (max-width:971px){
@@ -185,7 +172,6 @@
     .small-text {
         font-size: 13px;
     }
-    
 }
 
 /* (iPhone XR) */
@@ -210,7 +196,6 @@
     .navlinks li{
         margin-right: 15px;
         font-size: 15px;
-        
     }
 
     .header__bot{
@@ -238,7 +223,21 @@
         width: 50px;
         height: 50px;
     }
+
+
 }
+
+@media screen and (max-width: 800px) {
+    .nav {
+      display: block;
+    }
+    #currency{
+        display: none;
+    }
+    .log-sign{
+        display: none;
+    }
+  }
 
 /* (iPhone 6, 6S, 7, 8) */
 @media (max-width: 750px) {
@@ -333,9 +332,9 @@
         font-size: 9px;
         padding: 2px;
     }
-
-    
-
+    .header__top-leftdiv{
+        font-size: 15px;
+    }
 }
 
 /* (iPhone 3GS и более ранние модели) */
@@ -343,8 +342,9 @@
     .header-mid-logo .namecompany a{
         font-size: 15px;
     }
-
-
+    .header__top-leftdiv a{
+        display: none;
+    }
     }
 
 

@@ -7,15 +7,36 @@
    <link rel="stylesheet" href="normalize.css">
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="modal.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="media.css">
+   <link rel="stylesheet" href="nav.css">
    <link rel="icon" href="logo.ico" type="image/x-icon">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>Document</title>
     
 </head>
 <body>
+    <!-- Шапка 1 лвл -->
     <header class="header">
         <div class="header__top">
-            <div class="header__top-leftdiv">Green Hall</div>
+            <div class="header__top-leftdiv"><a href="#">Alexandr Melnikov</a></div>
+    <!-- Меню для навигации -->
+            <input type="checkbox" id="nav-toggle" hidden>
+            <nav class="nav" hidden>
+                <label for="nav-toggle" class="nav-toggle" onclick></label>
+                <h2 class="logo"> 
+                    <a href="//8soulkeeper8.github.io/HamburgStore/">Hamburg Store</a> 
+                </h2>
+                <ul>
+                    <li><a href="menu.html">Menu</a>
+                    <li><a href="#2">Orders</a>
+                    <li><a href="#3">Notifications</a>
+                    <li><a href="#4">Account</a>
+                    <li><a href="#5" id="supnav">Support</a>
+                    <li><a href="aboutus.html">About Us</a>
+                    <li><a href="#7">Settings</a> 
+                </ul>
+            </nav>
+
             <div class="header__top-rightdiv">
                 <div class="wallet">
                     <select name="" id="currency">
@@ -25,30 +46,26 @@
                         <option value="JPY">JPY</option>
                     </select>
                 </div>
-                <div class="log-sign"><a href="./login/login.html">Log in or Sign up</a></div>   
+                <div class="log-sign"><a href="login/login.html">Log in or Sign up</a></div>   
             </div>
         </div>
-
+        <!-- Шапка 2 лвл -->
         <div class="header__mid">
             <div class="container">
                 <div class="header-mid-logo">
                     <div class="logo"> 
-                     
-                    <a href="/index.html"><img src="./img/logo.svg" alt="loading..."></a>
+                    <a href="index.html"><img src="img/logo.svg" alt="loading..."></a>
                     </div>
-                    
                     <div class="namecompany">
-                        <a class="logo-link" href="./index.html">Hamburg Store</a>
+                        <a class="logo-link" href="index.html">Hamburg Store</a>
                     </div>
-
                 </div>
                 <div class="search">
                     <form>
-                        <input type="text" placeholder="Search...">
-                        <button type="submit"></button>
+                        <input type="text" placeholder="Search..." hidden>
+                        <button type="submit" hidden></button>
                       </form>
                     </div>
-
                     <div class="icons">
                         <div class="basket" >
                             <a href="#" class="iconslink"><ion-icon name="basket-outline"></ion-icon></a>
@@ -61,14 +78,11 @@
                         </div>
                     </div>
             </div>
-            
         </div>
-
+        <!-- Шапка 3 лвл -->
         <div class="header__bot">
             <div class="menu">
-                <input type="button" onclick="buttonClick(this)" value="Take Promocode">
-                     
-            
+                <input type="button" onclick="buttonClick(this)" value="Click Me">
             </div>
             <div class="navlinks">
                 <ul>
@@ -78,10 +92,10 @@
                     <li><a href="#menu" class="smooth-scroll">
                         Products  
                     </li></a>
-                    <li><a href="#menu" class="smooth-scroll">
+                    <li><a href="menu.html">
                         Menu
                     </li></a>
-                    <li><a href="#" onclick="scrollToBottom()">
+                    <li><a href="aboutus.html">
                         About Us
                     </li></a>
                     <li><a href="#" id="sup" >
@@ -90,8 +104,6 @@
                 </ul>
             </div>
         </div>
-        
-
     </header>
     <main>
         <section>
@@ -103,115 +115,126 @@
             <li class="slide"></li>
         </ul>
     </section>
+    <!-- Инфо-карты -->
     <section class="section-info">
         <div class="container">
             <div class="info-card">
                 <div class="img-info-card">
-                    <img src="/img/card-image/delivery.svg" alt="">
+                    <img src="img/card-image/delivery.svg" alt="">
                 </div>
-                <div class="text-info-card">
-                   <p> Fast Deliviry </p><p class="small-text"> delivery from <br> 10 to 25 minutes</p>
-                </div>
-            </div>
-            <div class="info-card">
-                <div class="img-info-card">
-                    <img src="/img/card-image/cofe.svg" alt="">
-                </div>
-                <div class="text-info-card">
-                    <p> Free Cofe</p><p class="small-text"> free coffee <br> in every order</p>
+                <div>
+                   <p class="text-info-card"> Fast Delivery </p><p class="small-text"> delivery from <br> 10 to 25 minutes</p>
                 </div>
             </div>
             <div class="info-card">
                 <div class="img-info-card">
-                    <img src="/img/card-image/wallet.svg" alt="">
+                    <img src="img/card-image/cofe.svg" alt="">
                 </div>
-                <div class="text-info-card">
-                    <p> Quick Payment </p><p class="small-text">100% secure <br> online payment</p>
+                <div>
+                    <p class="text-info-card"> Free Cofe</p><p class="small-text"> free coffee <br> in every order</p>
                 </div>
             </div>
             <div class="info-card">
                 <div class="img-info-card">
-                    <img src="/img/card-image/headphones.svg" alt="">
+                    <img src="img/card-image/wallet.svg" alt="">
                 </div>
-                <div class="text-info-card">
-                   <p> 24/7 Support</p><p class="small-text">operators respond <br> around the clock</p>
+                <div>
+                    <p  class="text-info-card"> Quick Payment </p><p class="small-text">100% secure <br> online payment</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="img-info-card">
+                    <img src="img/card-image/headphones.svg" alt="">
+                </div>
+                <div>
+                   <p class="text-info-card"> 24/7 Support</p><p class="small-text">operators respond <br> around the clock</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="img-info-card">
+                    <img src="img/card-image/beef.svg" alt="">
+                </div>
+                <div>
+                   <p class="text-info-card"> Meat quality</p><p class="small-text">Our meat is made <br> from 100% beef</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="img-info-card">
+                    <img src="img/card-image/eco.svg" alt="">
+                </div>
+                <div>
+                   <p class="text-info-card"> Environmental safety</p><p class="small-text">we use eco paper. <br> safety.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="hot-sales" id="sales">
-        <div class="hot-sale">
-        <h2> Hot Sales </h2>
-        <img src="/img/section2/fire.svg">
+    <!-- Горящие акции -->
+    <section>
+        <div class="outer-block">
+            <div class="inner-block">
+              <h2 id="sales">Hot Sales</h2>
+              <img src="img/section2/fire.svg" alt="Image" style="margin-top: 5px;">
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #222;">
+        <div class="containertr">
+            <div class="card" style="background-image: url('img/card-hotsale/hotsale1.png');">
+                <div class="frame"></div>
+                <div class="namescard">Event 1</div>
+            </div>
+            <div class="card" style="background-image: url('img/card-hotsale/hotsale2.png');">
+                <div class="frame"></div>
+                <div class="namescard">Event 2</div>
+            </div>
+            <div class="card" style="background-image: url('img/card-hotsale/hotsale3.png');">
+                <div class="frame"></div>
+                <div class="namescard">Event 3</div>
+            </div>
+            <div class="card" style="background-image: url('img/card-hotsale/hotsale1.png');">
+                <div class="frame"></div>
+                <div class="namescard">Event 4</div>
+            </div>
+          </div>
+    </section>
+    <!-- Популярные комбо -->
+    <section>
+        <div class="outer-block" id="h2combo">
+            <div class="inner-block"  id="h2combotext" >
+              <h2 id="menu">Popular Combo Lunches</h2>
+              <img src="img/burgercombo.svg" alt="Image" style="margin-top: 5px;">
+            </div>
         </div>
     </section>
     <section>
-        <div class="card-sales">
-            <a href="#">
-                <div class="oneblock">
-                    <img src="/img/card-hotsale/hotsale1.png" alt="">
-                    <div class="caption" id="item1">Double Drive Burger <p><del>18$</del> 13$</p></div>
-                </div>
-            </a>
-            <div class="twoblock">
-                <a href="#" class="twoblock-top">
-                    <div>
-                        <img src="/img/card-hotsale/hotsale2.png" alt="" >
-                        <div class="caption" id="item2">Chicago Classic <p><del>12$</del> 10$</p></div>
-                    </div>
-                </a>
-                <a href="#" class="twoblock-bot">
-                    <div >
-                        <img src="/img/card-hotsale/hotsale3.png" alt="">
-                        <div class="caption" id="item3">Hawaii Royal <p><del>10$</del> 7$</p></div>
-                    </div>
-                </a>
+        <div class="containertr">
+            <div class="card" style="background-image: url('img/card-hotsale/hotsale1.png');">
+                <div class="frame"></div>
+                <div class="namescard">Double Drive Burger</div>
             </div>
-        </div>
-      </section>
-      <section class="hot-sales" id="menu">
-        <div class="hot-sale">
-        <h2> Popular Combo Lunches </h2>
-        <img src="/img/burgercombo.svg">
-        </div>
+            <div class="card" style="background-image: url('img/card-hotsale/hotsale2.png');">
+                            <div class="frame"></div>
+                <div class="namescard">Chicago Classic</div>
+            </div>
+            <div class="card" style="background-image: url('img/card-hotsale/hotsale3.png');">
+                            <div class="frame"></div>
+                <div class="namescard">Hawaii Royal</div>
+            </div>
+            <div class="card" id="aboutus" style="background-image: url('img/card-hotsale/hotsale1.png');">
+                            <div class="frame"></div>
+                <div class="namescard">Drive Burger</div>
+            </div>
+            <div class="card" style="background-image: url('img/card-hotsale/hotsale3.png');">
+                            <div class="frame"></div>
+                <div class="namescard">Cheeseburger</div>
+            </div>
+            <div class="card" style="background-image: url('img/card-hotsale/hotsale1.png');">
+                            <div class="frame"></div>
+                <div class="namescard">Double Cheese</div>
+            </div>
+          </div>
     </section>
-    <section>
-        <div class="combo-container">
-          <a href="#" class="card-combo">
-            <div>
-                <img src="/img/burgercombo/blackcombo.png" alt="">
-                <div class="frame"></div>
-                <div class="captiontwo">Black Beast Combo</div>
-              </div>
-          </a>
-          <a href="#" class="card-combo2">
-            <div>
-                <img src="/img/burgercombo/classiccombo.png" alt="">
-                <div class="frame"></div>
-                <div class="captiontwo">Classic Couple Combo</div>
-              </div>
-          </a>
-        </div>
-      </section>
 
-      <section>
-        <div class="combo-container2">
-          <a href="#" class="card-combo">
-            <div>
-                <img src="/img/burgercombo/nuggetscombo.png" alt="">
-                <div class="frame"></div>
-                <div class="captiontwo">Nuggets Boom Combo</div>
-              </div>
-          </a>
-          <a href="#" class="card-combo2">
-            <div>
-                <img src="/img/burgercombo/caesarcombo.png" alt="">
-                <div class="frame"></div>
-                <div class="captiontwo">Caesar Fresh Combo</div>
-              </div>
-          </a>
-        </div>
-      </section>
     </main>
    
     <footer >
@@ -233,15 +256,14 @@
           </div>
         </div>
         <div class="footer-bottom" >
-          <p>&copy; 2023 Homies Burger. All Rights Reserved.</p>
+          <p>&copy; 2023 Hamburg Store. All Rights Reserved.</p>
         </div>
     </footer>
+    <script src="promo.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="modal.js"></script>
     <script src="scroll.js"></script>
-    <script src="archor.js"></script>
     <script src="slider.js"></script>
-    <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

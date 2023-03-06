@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Menu - Hamburg Store</title>
+</head>
+<body>
+      <!-- Шапка 1 лвл -->
+      <header class="header">
+        <div class="header__top">
+            <div class="header__top-leftdiv"><a href="#">Alexandr Melnikov</a></div>
+    <!-- Меню для навигации -->
+            <input type="checkbox" id="nav-toggle" hidden>
+            <nav class="nav" hidden>
+                <label for="nav-toggle" class="nav-toggle" onclick></label>
+                <h2 class="logo"> 
+                    <a href="//8soulkeeper8.github.io/HamburgStore/">Hamburg Store</a> 
+                </h2>
+                <ul>
+                    <li><a href="#1">Menu</a>
+                    <li><a href="#2">Orders</a>
+                    <li><a href="#3">Notifications</a>
+                    <li><a href="#4">Account</a>
+                    <li><a href="#5" id="supnav">Support</a>
+                    <li><a href="aboutus.html">About Us</a>
+                    <li><a href="#7">Settings</a> 
+                </ul>
+            </nav>
+
+            <div class="header__top-rightdiv">
+                <div class="wallet">
+                    <select name="" id="currency">
+                        <option value="USD">USD</option>
+                        <option value="RUB">RUB</option>
+                        <option value="EUR">EUR</option>
+                        <option value="JPY">JPY</option>
+                    </select>
+                </div>
+                <div class="log-sign"><a href="login/login.html">Log in or Sign up</a></div>   
+            </div>
+        </div>
+        <!-- Шапка 2 лвл -->
+        <div class="header__mid">
+            <div class="container">
+                <div class="header-mid-logo">
+                    <a href="#" onclick="history.back();return false;" class="history-back"><ion-icon name="arrow-back-outline">to return</ion-icon></a>
+                    <div class="logo"> 
+                    <a href="index.html"><img src="img/logo.svg" alt="loading..."></a>
+                    </div>
+                    <div class="namecompany">
+                        <a class="logo-link" href="index.html">Hamburg Store</a>
+                    </div>
+                </div>
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="Search..." hidden>
+                        <button type="submit" hidden></button>
+                      </form>
+                    </div>
+                    <div class="icons">
+                        <div class="basket" >
+                            <a href="#" class="iconslink"><ion-icon name="basket-outline"></ion-icon></a>
+                        </div>
+                        <div class="notifications">
+                            <a href="#" class="iconslink"><ion-icon name="notifications-outline"></ion-icon></a>
+                        </div>
+                        <div class="cabinet">
+                            <a href="#" class="iconslink"><ion-icon name="person-outline"></ion-icon></a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu-item">
+              <h3 class="menu-item-title">Double Drive Burger</h3>
+              <p class="menu-item-description">Rich and flavorful burger. Two juicy beef patties, cooked to perfection, and stack them with melted cheddar cheese, crispy bacon, and fresh lettuce and tomato. </p>
+              <span class="menu-item-price">7$</span>
+              <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon>Add to card</button>
+            </div>
+            <div class="menu-item">
+              <h3 class="menu-item-title">Cheeseburger</h3>
+              <p class="menu-item-description">The classic Cheeseburger is the perfect combination of juicy beef patty, melted cheese, fresh lettuce, ripe tomato, and tangy pickles, all nestled between our soft, toasted bun.</p>
+              <span class="menu-item-price">3$</span>
+              <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon> Add to card</button>
+            </div>
+            <div class="menu-item">
+                <h3 class="menu-item-title">Double Cheese</h3>
+                <p class="menu-item-description">Описание блюда</p>
+                <span class="menu-item-price">5$</span>
+                <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon> Add to card</button>
+              </div>
+              <div class="menu-item">
+                <h3 class="menu-item-title">Hawaii Royal</h3>
+                <p class="menu-item-description">Описание блюда</p>
+                <span class="menu-item-price">4$</span>
+                <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon> Add to card</button>
+              </div>
+              <div class="menu-item">
+                <h3 class="menu-item-title">Drive Burger</h3>
+                <p class="menu-item-description">Описание блюда</p>
+                <span class="menu-item-price">4.5$</span>
+                <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon> Add to card</button>
+              </div>
+              <div class="menu-item">
+                <h3 class="menu-item-title">Chicago Classic</h3>
+                <p class="menu-item-description">Описание блюда</p>
+                <span class="menu-item-price">8$</span>
+                <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon> Add to card</button>
+              </div>
+              <div class="menu-item">
+                <h3 class="menu-item-title">Название блюда</h3>
+                <p class="menu-item-description">Описание блюда</p>
+                <span class="menu-item-price">Цена блюда</span>
+                <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon> Add to card</button>
+              </div>
+              <div class="menu-item">
+                <h3 class="menu-item-title">Название блюда</h3>
+                <p class="menu-item-description">Описание блюда</p>
+                <span class="menu-item-price">Цена блюда</span>
+                <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon> Add to card</button>
+              </div>    
+              <div class="menu-item">
+                <h3 class="menu-item-title">Название блюда</h3>
+                <p class="menu-item-description">Описание блюда</p>
+                <span class="menu-item-price">Цена блюда</span>
+                <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon> Add to card</button>
+              </div>
+              <div class="menu-item">
+                <h3 class="menu-item-title">Название блюда</h3>
+                <p class="menu-item-description">Описание блюда</p>
+                <span class="menu-item-price">Цена блюда</span>
+                <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon> Add to card</button>
+              </div>
+              <div class="menu-item">
+                <h3 class="menu-item-title">Название блюда</h3>
+                <p class="menu-item-description">Описание блюда</p>
+                <span class="menu-item-price">Цена блюда</span>
+                <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon> Add to card</button>
+              </div>
+              <div class="menu-item">
+                <h3 class="menu-item-title">Название блюда</h3>
+                <p class="menu-item-description">Описание блюда</p>
+                <span class="menu-item-price">Цена блюда</span>
+                <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon> Add to card</button>
+              </div>    
+            
+    
+    <script src="modal.js"></script>
+    <script src="menu2.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
