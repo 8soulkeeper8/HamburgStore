@@ -3,34 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="correctform.css">
     <title>Log in</title>
 </head>
 <body>
     <section>
         <div class="form-box">
             <div class="form-value">
-                <form action="" autocomplete="off">
+                <form action="" id="regform" onsubmit="return checklogin(this)" method="post" autocomplete="off">
                     <h2>Register </h2>
                     <div class="inputbox">
                         <ion-icon name="person-outline"></ion-icon>
-                        <input autocomplete="off" required>
+                        <input id="regname" autocomplete="off" required>
                         <label for="">Name</label>
                     </div>
                     <div class="inputbox">
                         <ion-icon name="mail-outline"></ion-icon>
-                        <input autocomplete="off" required>
+                        <input id="regmail" type="email" autocomplete="off" required>
                         <label for="">Email</label>
                     </div>
                     <div class="inputbox">
                         <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" autocomplete="off" required>
+                        <input id="regpass" type="password" autocomplete="off" required>
                         <label for="">Password</label>
                     </div>
-                    <button>Register now!</button>
+                    <button type="submit">Register now!</button>
                 </form>
             </div>
         </div>
     </section>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="correctreg.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
