@@ -335,6 +335,16 @@
     .header__top-leftdiv{
         font-size: 15px;
     }
+
+    #info4 {
+        display: none;
+    }
+    #info5 {
+        display: none;
+    }
+    #info6 {
+        display: none;
+    }
 }
 
 /* (iPhone 3GS и более ранние модели) */
@@ -345,6 +355,7 @@
     .header__top-leftdiv a{
         display: none;
     }
+   
     }
 
 
